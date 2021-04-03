@@ -13,18 +13,232 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
-  <widget class="QWidget" name="centralwidget"/>
-  <widget class="QMenuBar" name="menubar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>640</width>
-     <height>21</height>
-    </rect>
-   </property>
+  <property name="styleSheet">
+   <string notr="true">QLabel{
+	background-color: transparent;
+	color: #fff;
+	border-color: #000000;
+	font: 14pt &quot;Arial Rounded MT Bold&quot;;
+
+}
+QWidget#centralwidget{
+	background-color: qconicalgradient(cx:1, cy:1, angle:0, stop:0 rgba(0, 4, 40, 255), stop:1 rgba(0, 78, 146, 255));
+}
+
+QComboBox
+{
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(118, 118, 118, 255),stop:1 rgba(70, 70, 70, 255));
+    border: 1px solid #333333;
+    border-radius: 3px;
+    padding-left: 6px;
+    color: lightgray;
+	font-weight: bold;
+    height: 20px;
+	font: 14pt &quot;Arial Rounded MT Bold&quot;;
+	color: #ffff00;
+}
+
+
+QComboBox::disabled
+{
+	background-color: #404040;
+	color: #656565;
+	border-color: #051a39;
+	font: 14pt &quot;Arial Rounded MT Bold&quot;;
+}
+
+
+QComboBox:hover
+{
+    background-color: #646464;
+
+}
+
+
+QComboBox:on
+{
+    background-color: #979796;
+	color: #000000;
+
+}
+
+
+QComboBox QAbstractItemView
+{
+    background-color: #c4c5c3;
+    color: #000000;
+    border: 1px solid black;
+    selection-background-color: #363942;
+    selection-color: #ffffff;
+    outline: 0;
+
+}
+
+
+QComboBox::drop-down
+{
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 15px;
+    border-left-width: 1px;
+    border-left-color: darkgray;
+    border-left-style: solid; 
+    border-top-right-radius: 3px; 
+    border-bottom-right-radius: 3px;
+
+}
+
+
+QComboBox::down-arrow
+{
+    image: url(://arrow-down.png);
+    width: 8px;
+    height: 8px;
+}
+
+QLineEdit
+{
+	background-color: #333333;
+	color: #ffff00;
+	font-weight: bold;
+    border: 1px solid #ffffff;
+	padding: 4px;
+	font: 14pt &quot;Arial Rounded MT Bold&quot;;
+
+}
+
+
+QLineEdit:hover
+{
+    border: 1px solid #ffff00;
+
+}
+
+
+QLineEdit::disabled
+{
+	background-color: #404040;
+	color: #656565;
+	border-width: 1px;
+	border-color: #051a39;
+	padding: 2px;
+
+}
+
+
+/*-----QTextEdit-----*/
+QTextEdit
+{
+	background-color: #808080;
+	color: #fff;
+	border: 1px groove #333333;
+
+}
+
+
+QTextEdit::disabled
+{
+	background-color: #404040;
+	color: #656565;
+	border-color: #051a39;
+
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QScrollArea" name="scrollArea">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>180</y>
+      <width>621</width>
+      <height>291</height>
+     </rect>
+    </property>
+    <property name="widgetResizable">
+     <bool>true</bool>
+    </property>
+    <widget class="QWidget" name="scrollAreaWidgetContents">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>619</width>
+       <height>289</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>45</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>URL:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>90</y>
+      <width>77</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Classes:</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="cb_classes">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>90</y>
+      <width>541</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>10</y>
+      <width>571</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>50</y>
+      <width>77</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TAG:</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="cb_tag">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>50</y>
+      <width>571</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
   </widget>
-  <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources/>
  <connections/>
