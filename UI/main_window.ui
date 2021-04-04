@@ -19,8 +19,15 @@
 	color: #fff;
 	border-color: #000000;
 	font: 14pt &quot;Arial Rounded MT Bold&quot;;
-
 }
+
+QLabel#lb_r {
+	background-color: #767676;
+	color: #fff;
+	border-color: #000000;
+	font: 14pt &quot;Arial Rounded MT Bold&quot;;
+}
+
 QWidget#centralwidget{
 	background-color: qconicalgradient(cx:1, cy:1, angle:0, stop:0 rgba(0, 4, 40, 255), stop:1 rgba(0, 78, 146, 255));
 }
@@ -31,7 +38,7 @@ QComboBox
     border: 1px solid #333333;
     border-radius: 3px;
     padding-left: 6px;
-    color: lightgray;
+    color: #DEB916;
 	font-weight: bold;
     height: 20px;
 	font: 14pt &quot;Arial Rounded MT Bold&quot;;
@@ -99,7 +106,7 @@ QComboBox::down-arrow
 QLineEdit
 {
 	background-color: #333333;
-	color: #ffff00;
+	color: #DEB916;
 	font-weight: bold;
     border: 1px solid #ffffff;
 	padding: 4px;
@@ -143,32 +150,30 @@ QTextEdit::disabled
 	border-color: #051a39;
 
 }
+
+QPushButton {
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(24, 143, 255, 255), stop:1 rgba(109, 0, 246, 255));
+	color: #ffff00;
+	font: 75 16pt &quot;Arial Rounded MT Bold&quot;;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 3px;
+	padding: 5px;
+}
+
+
+QPushButton::pressed {
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(24, 143, 255, 255), stop:1 rgba(109, 0, 246, 255));
+	color: #ffff00;
+	font: 75 24pt &quot;Arial Rounded MT Bold&quot;;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 3px;
+	padding: 5px;
+}
 </string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QScrollArea" name="scrollArea">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>180</y>
-      <width>621</width>
-      <height>291</height>
-     </rect>
-    </property>
-    <property name="widgetResizable">
-     <bool>true</bool>
-    </property>
-    <widget class="QWidget" name="scrollAreaWidgetContents">
-     <property name="geometry">
-      <rect>
-       <x>0</x>
-       <y>0</y>
-       <width>619</width>
-       <height>289</height>
-      </rect>
-     </property>
-    </widget>
-   </widget>
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
@@ -236,6 +241,106 @@ QTextEdit::disabled
       <width>571</width>
       <height>31</height>
      </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string/>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>h1</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>h2</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>h3</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>h4</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>h5</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>h6</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>a</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>div</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>id</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ol</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>span</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ul</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>130</y>
+      <width>220</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Scrap</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lb_r">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>190</y>
+      <width>621</width>
+      <height>271</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="scaledContents">
+     <bool>false</bool>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+    <property name="textInteractionFlags">
+     <set>Qt::TextEditorInteraction</set>
     </property>
    </widget>
   </widget>
