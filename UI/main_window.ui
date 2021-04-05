@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>640</width>
-    <height>480</height>
+    <width>656</width>
+    <height>519</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -247,66 +247,6 @@ QPushButton::pressed {
       <string/>
      </property>
     </item>
-    <item>
-     <property name="text">
-      <string>h1</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>h2</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>h3</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>h4</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>h5</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>h6</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>a</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>div</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>id</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>ol</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>span</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>ul</string>
-     </property>
-    </item>
    </widget>
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
@@ -330,6 +270,9 @@ QPushButton::pressed {
       <height>271</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">color: #FFFF00;</string>
+    </property>
     <property name="text">
      <string/>
     </property>
@@ -342,6 +285,29 @@ QPushButton::pressed {
     <property name="textInteractionFlags">
      <set>Qt::TextEditorInteraction</set>
     </property>
+   </widget>
+   <widget class="QScrollArea" name="see">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>200</y>
+      <width>581</width>
+      <height>251</height>
+     </rect>
+    </property>
+    <property name="widgetResizable">
+     <bool>true</bool>
+    </property>
+    <widget class="QWidget" name="scrollAreaWidgetContents">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>579</width>
+       <height>249</height>
+      </rect>
+     </property>
+    </widget>
    </widget>
   </widget>
  </widget>
