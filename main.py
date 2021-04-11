@@ -10,14 +10,20 @@ def foo():
     sopa = BeautifulSoup(requests.get(url).text.encode('utf8'), 'lxml')
 
     tags = []
-
     for i in sopa.find_all(True):
         tags.append(i.name)
-
     tag_names = set(tags)
-
     for tag in tag_names:
         tela.cb_tag.addItem(tag)
+
+    classes = [value
+               for element in sopa.find_all(class_=True)
+               for value in element["class"]]
+
+    class_names = set(classes)
+
+    for clas in class_names:
+        tela.cb_classes.addItem(clas)
 
 
 app = QtWidgets.QApplication([])
