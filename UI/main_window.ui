@@ -18,22 +18,21 @@
 	background-color: transparent;
 	color: #fff;
 	border-color: #000000;
-	font: 14pt &quot;Arial Rounded MT Bold&quot;;
+	font: bold 14pt &quot;Consolas&quot;;
 }
 
 QLabel#lb_r {
 	background-color: #767676;
 	color: #fff;
 	border-color: #000000;
-	font: 14pt &quot;Arial Rounded MT Bold&quot;;
+	font: bold 14pt &quot;Consolas&quot;;
 }
 
-QWidget#centralwidget{
+QWidget#centralwidget {
 	background-color: qconicalgradient(cx:1, cy:1, angle:0, stop:0 rgba(0, 4, 40, 255), stop:1 rgba(0, 78, 146, 255));
 }
 
-QComboBox
-{
+QComboBox {
     background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(118, 118, 118, 255),stop:1 rgba(70, 70, 70, 255));
     border: 1px solid #333333;
     border-radius: 3px;
@@ -41,49 +40,41 @@ QComboBox
     color: #DEB916;
 	font-weight: bold;
     height: 20px;
-	font: 14pt &quot;Arial Rounded MT Bold&quot;;
+	font: bold 14pt &quot;Consolas&quot;;
 	color: #ffff00;
 }
 
 
-QComboBox::disabled
-{
+QComboBox::disabled {
 	background-color: #404040;
 	color: #656565;
 	border-color: #051a39;
-	font: 14pt &quot;Arial Rounded MT Bold&quot;;
+	font: bold 14pt &quot;Consolas&quot;;
 }
 
 
-QComboBox:hover
-{
+QComboBox:hover {
     background-color: #646464;
-
 }
 
 
-QComboBox:on
-{
+QComboBox:on {
     background-color: #979796;
 	color: #000000;
-
 }
 
 
-QComboBox QAbstractItemView
-{
+QComboBox QAbstractItemView {
     background-color: #c4c5c3;
     color: #000000;
     border: 1px solid black;
     selection-background-color: #363942;
     selection-color: #ffffff;
     outline: 0;
-
 }
 
 
-QComboBox::drop-down
-{
+QComboBox::drop-down {
     subcontrol-origin: padding;
     subcontrol-position: top right;
     width: 15px;
@@ -92,69 +83,57 @@ QComboBox::drop-down
     border-left-style: solid; 
     border-top-right-radius: 3px; 
     border-bottom-right-radius: 3px;
-
 }
 
 
-QComboBox::down-arrow
-{
+QComboBox::down-arrow {
     image: url(://arrow-down.png);
     width: 8px;
     height: 8px;
 }
 
-QLineEdit
-{
+QLineEdit {
 	background-color: #333333;
 	color: #DEB916;
 	font-weight: bold;
     border: 1px solid #ffffff;
 	padding: 4px;
-	font: 14pt &quot;Arial Rounded MT Bold&quot;;
-
+	font: bold 14pt &quot;Consolas&quot;;
 }
 
 
-QLineEdit:hover
-{
+QLineEdit:hover {
     border: 1px solid #ffff00;
-
 }
 
 
-QLineEdit::disabled
-{
+QLineEdit::disabled {
 	background-color: #404040;
 	color: #656565;
 	border-width: 1px;
 	border-color: #051a39;
 	padding: 2px;
-
 }
 
 
 /*-----QTextEdit-----*/
-QTextEdit
-{
+QTextEdit {
 	background-color: #808080;
 	color: #fff;
 	border: 1px groove #333333;
-
 }
 
 
-QTextEdit::disabled
-{
+QTextEdit::disabled {
 	background-color: #404040;
 	color: #656565;
 	border-color: #051a39;
-
 }
 
 QPushButton {
 	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(24, 143, 255, 255), stop:1 rgba(109, 0, 246, 255));
 	color: #ffff00;
-	font: 75 16pt &quot;Arial Rounded MT Bold&quot;;
+	font: bold 16pt &quot;Consolas&quot;;
 	border-style: solid;
 	border-width: 1px;
 	border-radius: 3px;
@@ -165,7 +144,7 @@ QPushButton {
 QPushButton::pressed {
 	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(24, 143, 255, 255), stop:1 rgba(109, 0, 246, 255));
 	color: #ffff00;
-	font: 75 24pt &quot;Arial Rounded MT Bold&quot;;
+	font: bold 24pt &quot;Consolas&quot;;
 	border-style: solid;
 	border-width: 1px;
 	border-radius: 3px;
@@ -248,19 +227,6 @@ QPushButton::pressed {
      </property>
     </item>
    </widget>
-   <widget class="QPushButton" name="pushButton">
-    <property name="geometry">
-     <rect>
-      <x>210</x>
-      <y>130</y>
-      <width>220</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Scrap</string>
-    </property>
-   </widget>
    <widget class="QLabel" name="lb_r">
     <property name="geometry">
      <rect>
@@ -286,28 +252,31 @@ QPushButton::pressed {
      <set>Qt::TextEditorInteraction</set>
     </property>
    </widget>
-   <widget class="QScrollArea" name="see">
+   <widget class="QWidget" name="">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>200</y>
-      <width>581</width>
-      <height>251</height>
+      <x>10</x>
+      <y>130</y>
+      <width>621</width>
+      <height>51</height>
      </rect>
     </property>
-    <property name="widgetResizable">
-     <bool>true</bool>
-    </property>
-    <widget class="QWidget" name="scrollAreaWidgetContents">
-     <property name="geometry">
-      <rect>
-       <x>0</x>
-       <y>0</y>
-       <width>579</width>
-       <height>249</height>
-      </rect>
-     </property>
-    </widget>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="bt_tags_classes">
+       <property name="text">
+        <string>Scrap TAGs and Classes</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="bt_data">
+       <property name="text">
+        <string>Scrap Data</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
    </widget>
   </widget>
  </widget>
