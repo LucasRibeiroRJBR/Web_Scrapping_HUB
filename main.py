@@ -37,10 +37,22 @@ def show_tags_classes():
 
 
 def show_data():
+
     url = tela.lineEdit.text()
     sopa = BeautifulSoup(requests.get(url).text.encode('utf8'), 'lxml')
 
-    exec(f"for i in sopa.find_all('{str(tela.cb_tag.currentText())}', class_='{str(tela.cb_classes.currentText())}'): tela.lb_r.setText(i.text.strip())")
+    texto = ''
+    t = []
+    t.clear()
+
+    exec(f"for i in sopa.find_all('{str(tela.cb_tag.currentText())}', class_='{str(tela.cb_classes.currentText())}'): t.append(i.text)")
+
+    print(t)
+
+    for tt in t:
+        texto += f'{tt}\n'
+
+    tela.lb_r.setText(texto)
 
 
 app = QtWidgets.QApplication([])

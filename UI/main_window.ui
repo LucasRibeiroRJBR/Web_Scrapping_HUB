@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>656</width>
-    <height>519</height>
+    <width>999</width>
+    <height>699</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -22,8 +22,8 @@
 }
 
 QLabel#lb_r {
-	background-color: #767676;
-	color: #fff;
+	background-color: #ffffff;
+	color: black;
 	border-color: #000000;
 	font: bold 14pt &quot;Consolas&quot;;
 }
@@ -184,7 +184,7 @@ QPushButton::pressed {
      <rect>
       <x>90</x>
       <y>90</y>
-      <width>541</width>
+      <width>901</width>
       <height>31</height>
      </rect>
     </property>
@@ -194,7 +194,7 @@ QPushButton::pressed {
      <rect>
       <x>60</x>
       <y>10</y>
-      <width>571</width>
+      <width>931</width>
       <height>31</height>
      </rect>
     </property>
@@ -217,7 +217,7 @@ QPushButton::pressed {
      <rect>
       <x>60</x>
       <y>50</y>
-      <width>571</width>
+      <width>931</width>
       <height>31</height>
      </rect>
     </property>
@@ -232,12 +232,12 @@ QPushButton::pressed {
      <rect>
       <x>10</x>
       <y>190</y>
-      <width>621</width>
-      <height>271</height>
+      <width>981</width>
+      <height>501</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: #FFFF00;</string>
+     <string notr="true">font: 75 12pt &quot;Times New Roman&quot;;</string>
     </property>
     <property name="text">
      <string/>
@@ -252,12 +252,12 @@ QPushButton::pressed {
      <set>Qt::TextEditorInteraction</set>
     </property>
    </widget>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>10</x>
       <y>130</y>
-      <width>621</width>
+      <width>981</width>
       <height>51</height>
      </rect>
     </property>
