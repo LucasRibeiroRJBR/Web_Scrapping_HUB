@@ -45,14 +45,14 @@ def show_data():
     t = []
     t.clear()
 
-    exec(f"for i in sopa.find_all('{str(tela.cb_tag.currentText())}', class_='{str(tela.cb_classes.currentText())}'): t.append(i.text)")
+    exec(f"for i in sopa.find_all('{str(tela.cb_tag.currentText())}', class_='{str(tela.cb_classes.currentText())}'): t.append(i.text.strip())")
 
     print(t)
 
     for tt in t:
         texto += f'{tt}\n'
 
-    tela.lb_r.setText(texto)
+    tela.textBrowser.append(texto)
 
 
 app = QtWidgets.QApplication([])
