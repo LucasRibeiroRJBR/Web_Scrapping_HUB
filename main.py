@@ -37,7 +37,7 @@ def show_tags_classes():
 
 
 def show_data():
-
+    tela.textBrowser.clear()
     url = tela.lineEdit.text()
     sopa = BeautifulSoup(requests.get(url).text.encode('utf8'), 'lxml')
 
