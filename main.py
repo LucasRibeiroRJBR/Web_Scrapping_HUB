@@ -1,4 +1,4 @@
-from PyQt5 import uic, QtWidgets
+from PyQt5 import uic, QtWidgets, QtGui
 from bs4 import BeautifulSoup
 import requests, lxml
 
@@ -47,7 +47,7 @@ def show_data():
 
     exec(f"for i in sopa.find_all('{str(tela.cb_tag.currentText())}', class_='{str(tela.cb_classes.currentText())}'): t.append(i.text.strip())")
 
-    print(t)
+    #print(t)
 
     for tt in t:
         texto += f'{tt}\n'
@@ -61,6 +61,10 @@ tela = uic.loadUi('UI/main_window.ui')
 
 tela.bt_tags_classes.clicked.connect(show_tags_classes)
 tela.bt_data.clicked.connect(show_data)
+
+icone = QtGui.QIcon()
+icone.addFile('img/icon.png')
+app.setWindowIcon(icone)
 
 tela.show()
 app.exec()
